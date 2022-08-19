@@ -26,9 +26,7 @@ public class ParseIntegers {
                 if (next.matches(".*\\d.*"))
                     sum += number;
             }
-            catch (NumberFormatException e){
-                System.out.println(e.getMessage());
-            }
+            catch (NumberFormatException e){}
             if(!next.matches(".*\\d.*"))
                 justWords += " " + next;
             // todo: complete it
